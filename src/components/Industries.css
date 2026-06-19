@@ -1,0 +1,69 @@
+.industries-container {
+  text-align: center;
+  padding: 40px 60px;
+  background: #f5f1eb;
+}
+
+.industries-container h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+.industries-container span {
+  color: #6c4cff;
+  font-weight: 600;
+}
+
+.brands-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.brand-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* 🔥 MAIN FIX */
+.brand-card img {
+  max-width: 160px;   
+  height: 60px;      
+  object-fit: contain;
+  transition: 0.3s;
+}
+
+/* hover effect */
+.brand-card img:hover {
+  transform: scale(1.5);
+}
+/* default logos */
+.brand-card img {
+  max-width: 140px;
+  height: 60px;
+  object-fit: contain;
+}
+
+/* 🔥 only 2 logos fix */
+.big-logo {
+  transform: scale(1.6);
+}
+/* button */
+.view-btn {
+  margin-top: 25px;
+  padding: 10px 22px;
+  border: 1px solid #6c4cff;
+  color: #6c4cff;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  background: #6c4cff;
+  color: #fff;
+}

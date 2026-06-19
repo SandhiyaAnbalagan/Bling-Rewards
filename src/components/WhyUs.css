@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.whyus {
+  width: 100%;
+  padding: 60px 40px;
+  background: #f5f1eb;
+}
+
+.heading {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.heading span {
+  color: #6c3ef4;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 260px;
+  min-height: 320px;
+  background: #fff;
+  border: 1px solid #e5d8ff;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(108, 62, 244, 0.2);
+}
+
+.icon {
+  color: #6c3ef4;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 18px;
+}
+
+.card ul li::before {
+  content: "•";
+  color: #6c3ef4;
+  position: absolute;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+}

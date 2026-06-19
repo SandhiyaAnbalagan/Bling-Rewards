@@ -1,0 +1,136 @@
+.rewards-container {
+  padding: 80px 60px;
+  background: #f7f7f7;  
+  text-align: center;
+}
+
+
+.rewards-container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* 🔥 double color effect */
+.rewards-container h2 span {
+  background: linear-gradient(90deg, #6c4cff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* outer soft box */
+.testimonial-wrapper {
+  background:  #fcf7f2;   
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.testimonial-row {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* 🔥 CARD STYLE (important) */
+.testimonial-card {
+  background: #f5f5f7 ;
+  padding: 30px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: left;
+  position: relative;
+}
+
+/* quote */
+.quote {
+  font-size: 40px;
+  color: #7b61ff;
+  margin-bottom: 10px;
+}
+
+/* text */
+.text {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* bottom section */
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.role {
+  font-size: 13px;
+  color: #777;
+}
+
+.company {
+  font-weight: 600;
+}
+
+/* logo */
+.bottom img {
+  width: 70px;
+  object-fit: contain;
+}
+
+/* dots */
+.dots {
+  margin-top: 25px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: #7b61ff;
+}
+/* wrapper important */
+.testimonial-wrapper {
+  position: relative;
+  background:  #f5f1eb;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+/* arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border: none;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* left */
+.arrow.left {
+  left: -20px;
+}
+
+/* right */
+.arrow.right {
+  right: -20px;
+}
+
+/* hover */
+.arrow:hover {
+  background: #7b61ff;
+  color: #fff;
+}

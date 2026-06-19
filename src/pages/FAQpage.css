@@ -1,0 +1,211 @@
+.faq-wrapper {
+  background: #f5f1eb;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+
+.faq-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 80px;
+  background: #f5f1eb;
+}
+
+.faq-banner-left {
+  max-width: 550px;
+}
+
+.faq-banner-left h1 {
+  font-size: 70px;
+  line-height: 1.1;
+  color: #222;
+  margin-bottom: 25px;
+  font-family: Georgia, serif;
+}
+
+.faq-banner-left span {
+  color: #7a5cff;
+}
+
+.faq-banner-left p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.faq-banner-left button {
+  border: none;
+  background: #7a5cff;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.faq-banner-right img {
+  width: 480px;
+}
+
+/* FAQ SECTION */
+
+.faq-list-section {
+  width: 85%;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.faq-card-box {
+  background: white;
+  border-radius: 18px;
+  margin-bottom: 22px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+
+.faq-card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.faq-number-circle {
+  width: 38px;
+  height: 38px;
+  background: #7a5cff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.faq-card-header h3 {
+  flex: 1;
+  font-size: 24px;
+  color: #222;
+}
+
+.faq-toggle-icon {
+  font-size: 32px;
+  color: #7a5cff;
+  font-weight: bold;
+}
+
+.faq-card-content {
+  padding: 0 30px 30px 85px;
+  border-top: 1px solid #eee;
+  background: #faf8ff;
+}
+
+.faq-card-content p {
+  color: #555;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+/* CTA */
+
+.faq-action-banner {
+  width: 90%;
+  margin: 0 auto 80px;
+  background: linear-gradient(
+    135deg,
+    #6d39ff,
+    #8b63ff
+  );
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  color: white;
+}
+
+.faq-action-left img,
+.faq-action-right img {
+  width: 220px;
+}
+
+.faq-action-content {
+  text-align: center;
+  max-width: 550px;
+}
+
+.faq-action-content h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.faq-action-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.faq-action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.faq-action-buttons button {
+  border: none;
+  padding: 14px 28px;
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.outline-btn {
+  background: transparent !important;
+  color: white !important;
+  border: 2px solid white !important;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .faq-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .faq-banner-right img {
+    width: 280px;
+    margin-top: 30px;
+  }
+
+  .faq-banner-left h1 {
+    font-size: 50px;
+  }
+
+  .faq-card-header h3 {
+    font-size: 18px;
+  }
+
+  .faq-action-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .faq-action-left img,
+  .faq-action-right img {
+    width: 150px;
+  }
+
+  .faq-action-content h2 {
+    font-size: 34px;
+  }
+}
