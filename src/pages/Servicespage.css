@@ -83,12 +83,13 @@ max-width: 1500px;
 
 /* SECTION */
 .brs-services-section{
-   background:#fff7ee;
+  background:#fff7ee;
   border-radius:30px;
-  margin:40px 80px;
+  margin:40px 20px;   
   padding:80px;
+  width:calc(100% - 40px);
+  max-width:1800px;
 }
-
 .brs-why-section{
  background:#fff7ee;
   border-radius:30px;
@@ -243,9 +244,8 @@ max-width: 400px;
 }
 .brs-services-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:25px;
-  margin-top:50px;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
 }
 
 .brs-service-card{
