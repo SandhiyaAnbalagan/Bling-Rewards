@@ -312,6 +312,14 @@ max-width: 400px;
 }
 
 /* WHY SECTION */
+.brs-why-section{
+  background:#fff7ee;
+  border-radius:30px;
+  margin:40px 20px;   /* 80px → 20px */
+  padding:80px;
+  width:calc(100% - 40px);
+  max-width:1800px;
+}
 .brs-why-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -400,10 +408,12 @@ max-width: 400px;
 }
 /* PROCESS SECTION */
 .brs-process-section{
-    background: #fff7ee;
-    border-radius: 35px;
-    margin: 50px 80px;
-    padding: 80px 60px;
+  background:#fff7ee;
+  border-radius:35px;
+  margin:40px 20px;   /* 80px → 20px */
+  padding:80px;
+  width:calc(100% - 40px);
+  max-width:1800px;
 }
 
 .brs-process-grid{
