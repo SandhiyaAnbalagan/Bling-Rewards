@@ -1,11 +1,11 @@
 *{
 margin:0;
-padding:50;
+padding:0;
 box-sizing:border-box;
 }
 
 .features-page{
-width:200%;
+width:100%;
 
 }
 
@@ -80,7 +80,7 @@ flex:1;
 }
 
 .hero-right img{
-width:120%;
+width:100%;
 }
 
 
@@ -533,5 +533,12 @@ gap:20px;
 .hero-buttons{
 flex-direction:column;
 }
+
+}
+@media (max-width:768px){
+
+  .featurespage-grid{
+    grid-template-columns:1fr;
+  }
 
 }

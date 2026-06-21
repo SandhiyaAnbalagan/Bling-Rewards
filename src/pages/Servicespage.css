@@ -125,7 +125,8 @@ max-width: 1500px;
 
 .brs-services-section::before{
   content: "";
-  width: 400px;
+  width: 100%;
+max-width: 400px;
   height: 400px;
   background: rgba(122,92,255,0.08);
   border-radius: 50%;

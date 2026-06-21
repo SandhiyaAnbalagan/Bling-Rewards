@@ -596,3 +596,16 @@ font-size:34px;
 
 
 }
+@media (max-width:768px){
+
+  .solution-grid{
+    padding:20px;
+    margin:10px;
+  }
+
+  .solution-card{
+    min-height:auto;
+    padding:20px;
+  }
+
+}

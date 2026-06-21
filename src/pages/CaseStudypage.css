@@ -496,3 +496,16 @@
     width: 100%;
   }
 }
+@media (max-width:768px){
+
+  .featured-grid,
+  .case-grid,
+  .metrics-grid{
+    grid-template-columns:1fr;
+  }
+
+  .case-header{
+    flex-direction:column;
+  }
+
+}

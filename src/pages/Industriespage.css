@@ -369,3 +369,23 @@ width:100%;
 height:5px;
 background:linear-gradient(90deg,#6c4cff,#8f6fff);
 }
+@media (max-width:768px){
+
+  .industries-grid,
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .industries-hero{
+    flex-direction:column;
+    padding:40px 20px;
+  }
+ .hero-left h1{
+    font-size:48px !important;
+  }
+
+  .industries-grid{
+    grid-template-columns:1fr;
+  }
+
+}

@@ -97,5 +97,35 @@
   color: #666;
   line-height: 1.5;
 }
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 20px 40px;
+    min-height: auto;
+    text-align: center;
+  }
 
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-right h1 {
+    font-size: 36px;
+  }
+
+  .hero-right p {
+    font-size: 16px;
+  }
+
+  .hero-features {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature {
+    width: 100%;
+  }
+}
 

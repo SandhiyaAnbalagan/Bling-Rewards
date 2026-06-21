@@ -22,3 +22,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 768px) {
+
+  /* Hero sections */
+  .industries-hero,
+  .solution-hero,
+  .brs-hero,
+  .cs-hero,
+  .faq-banner {
+    padding: 30px 20px !important;
+    margin: 10px !important;
+    border-radius: 20px !important;
+  }
+
+  /* All main headings */
+  .hero-left h1,
+  .hero-content h1,
+  .brs-main-title,
+  .cs-left h1 {
+    font-size: 38px !important;
+    line-height: 1.2 !important;
+    word-break: break-word;
+  }
+
+  /* Paragraphs */
+  .hero-description,
+  .hero-content p,
+  .cs-left p,
+  .brs-hero-text {
+    font-size: 16px !important;
+  }
+
+  /* Buttons */
+  .hero-buttons,
+  .brs-btn-group,
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button,
+  .brs-btn-group button,
+  .cta-buttons button {
+    width: 100%;
+  }
+
+  /* Images */
+  .hero-right img,
+  .hero-image img,
+  .brs-hero-right img {
+    max-width: 280px;
+    margin: auto;
+    display: block;
+  }
+
+}

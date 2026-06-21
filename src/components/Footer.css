@@ -161,7 +161,8 @@
     height: 50px;
 }
 .subscribe-box input {
-    width: 400px;
+    width: 100%;
+    max-width: 400px;;
     padding: 0 15px;
     border: none;
     outline: none;
@@ -201,3 +202,45 @@
     text-decoration: none;
 
 }
+@media (max-width: 768px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-section {
+    flex-direction: column;
+  }
+
+  .subscribe-box {
+    width: 100%;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .men-img {
+    width: 120px;
+    left: 5px;
+    display: block;
+  }
+
+  .women-img {
+    width: 120px;
+    right: 5px;
+    display: block;
+  }
+
+  }
