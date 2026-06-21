@@ -7,7 +7,7 @@ import Service from "./pages/Servicespage";
 import Industries from "./pages/Industriespage";
 import FAQ from "./pages/FAQpage";
 import CaseStudy from "./pages/CaseStudypage";
-
+import DemoForm from "./components/DemoForm";
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +19,7 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/casestudy" element={<CaseStudy />} />
+        <Route path="/demoform" element={<DemoForm />} />
       </Routes>
     </BrowserRouter>
   );

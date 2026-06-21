@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { useNavigate } from "react-router-dom";
 import {
   FaLinkedin,
   FaInstagram,
@@ -8,6 +9,7 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+  const navigate = useNavigate();
   return (
     <>
       {/* Top CTA */}
@@ -32,15 +34,22 @@ function Footer() {
           </p>
 
           <div className="footer-buttons">
-            <button className="demo-btn">
+
+         <button
+            className="demo-btn"
+            onClick={() => navigate("/demoform")}
+          >
               Book a Demo
-            </button>
+        </button>
 
-            <button className="sales-btn">
-              Talk to Sales
-            </button>
-          </div>
+       <a
+         href="tel:+918825751903"
+         className="sales-btn"
+       >
+          Talk to Sales
+        </a>
 
+</div>
         </div>
 
         <img
