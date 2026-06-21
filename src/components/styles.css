@@ -53,18 +53,24 @@ body {
   height: 90px;
 }
 
-.menu {
-  display: flex;
-  gap: 25px;
-  list-style: none;
-}
 .menu-icon{
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
+.menu-icon{
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+}
 
-@media (max-width: 768px){
+@media (max-width:768px){
+
+  .navbar{
+    padding: 15px 20px;
+    position: relative;
+  }
 
   .menu-icon{
     display: block;
@@ -72,6 +78,10 @@ body {
 
   .nav-links{
     display: none;
+  }
+
+  .nav-links.active{
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 80px;
@@ -79,19 +89,15 @@ body {
     width: 100%;
     background: white;
     padding: 20px 0;
-    text-align: center;
     gap: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
   }
 
-  .nav-links.active{
-    display: flex;
+  .demo-btn{
+    display: none;
   }
 }
-.menu li {
-  cursor: pointer;
-}
-
-
 
 .demo-btn {
   background: #6c3cf0 !important;
