@@ -596,16 +596,70 @@ font-size:34px;
 
 
 }
-@media (max-width:768px){
+@media (max-width: 768px) {
+
+  .solution-hero{
+    margin: 10px;
+    padding: 30px 20px;
+    min-height: auto;
+  }
+
+  .hero-wrapper{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .hero-content,
+  .hero-image{
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-content h1{
+    font-size: 38px !important;
+    line-height: 1.2;
+  }
+
+  .hero-content p{
+    font-size: 16px;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button{
+    width: 100%;
+  }
+
+  .hero-image img{
+    max-width: 280px;
+  }
 
   .solution-grid{
-    padding:20px;
-    margin:10px;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 10px;
+    gap: 20px;
   }
 
   .solution-card{
-    min-height:auto;
-    padding:20px;
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .solution-card h3{
+    font-size: 22px;
+  }
+
+  .solutionicon{
+    width: 55px;
+    height: 55px;
+  }
+
+  .number{
+    font-size: 28px;
   }
 
 }
