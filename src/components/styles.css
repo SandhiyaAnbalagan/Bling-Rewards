@@ -234,10 +234,26 @@ body {
 
 @media (max-width: 768px) {
 
-  .demo-btn{
-    padding: 8px 18px !important;
-    font-size: 14px !important;
-    border-radius: 25px !important;
+  /* Logo size */
+  .nav-logo img {
+    height: 40px;
+  }
+
+  /* Book Demo button size */
+  .demo-btn {
+    padding: 7px 14px !important;
+    font-size: 12px !important;
+    border-radius: 20px !important;
+  }
+
+  /* Menu icon size */
+  .menu-icon {
+    font-size: 24px;
+  }
+
+  /* Navbar spacing */
+  .navbar {
+    padding: 10px 15px;
   }
 
 }
