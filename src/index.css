@@ -1,80 +1,135 @@
-* {
+:root{
+  /* Background Colors */
+  --bg-primary: #F0FAFB;
+  --bg-secondary: #E0F5F8;
+
+  /* Primary Theme Colors */
+  --primary: #0891B2;
+  --secondary: #22D3EE;
+  --primary-hover: #0E7490;
+
+  /* Accent Color */
+  --accent: #10B981;
+
+  /* Text Colors */
+  --text-primary: #0D3347;
+  --text-secondary: #5B8D98;
+
+  /* Cards & Borders */
+  --card-bg: #FFFFFF;
+  --border: #B9DFE8;
+
+  /* Main Gradient */
+  --gradient: linear-gradient(
+    135deg,
+    #0891B2 0%,
+    #22D3EE 50%,
+    #10B981 100%
+  );
+}
+
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+body{
   width: 100%;
   overflow-x: hidden;
   font-family: Arial, sans-serif;
-}
-body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(34,211,238,0.12) 0%,
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at top right,
+      rgba(16,185,129,0.10) 0%,
+      transparent 30%
+    ),
+
+    radial-gradient(
+      circle at bottom left,
+      rgba(8,145,178,0.10) 0%,
+      transparent 30%
+    ),
+
+    var(--bg-primary);
+
+  color: var(--text-primary);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+code{
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 
-@media (max-width: 768px) {
+/* Mobile Responsive */
 
-  /* Hero sections */
+@media (max-width:768px){
+
+  /* Hero Sections */
   .industries-hero,
   .solution-hero,
   .brs-hero,
   .cs-hero,
-  .faq-banner {
-    padding: 30px 20px !important;
-    margin: 10px !important;
-    border-radius: 20px !important;
+  .faq-banner{
+    padding:30px 20px !important;
+    margin:10px !important;
+    border-radius:20px !important;
   }
 
-  /* All main headings */
+  /* Headings */
   .hero-left h1,
   .hero-content h1,
   .brs-main-title,
-  .cs-left h1 {
-    font-size: 38px !important;
-    line-height: 1.2 !important;
-    word-break: break-word;
+  .cs-left h1{
+    font-size:38px !important;
+    line-height:1.2 !important;
+    word-break:break-word;
   }
 
-  /* Paragraphs */
+  /* Paragraph */
   .hero-description,
   .hero-content p,
   .cs-left p,
-  .brs-hero-text {
-    font-size: 16px !important;
+  .brs-hero-text{
+    font-size:16px !important;
   }
 
   /* Buttons */
   .hero-buttons,
   .brs-btn-group,
-  .cta-buttons {
-    flex-direction: column;
-    width: 100%;
+  .cta-buttons{
+    flex-direction:column;
+    width:100%;
   }
 
   .hero-buttons button,
   .brs-btn-group button,
-  .cta-buttons button {
-    width: 100%;
+  .cta-buttons button{
+    width:100%;
   }
 
   /* Images */
   .hero-right img,
   .hero-image img,
-  .brs-hero-right img {
-    max-width: 280px;
-    margin: auto;
-    display: block;
+  .brs-hero-right img{
+    max-width:280px;
+    margin:auto;
+    display:block;
   }
-
 }

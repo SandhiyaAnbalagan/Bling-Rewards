@@ -1,655 +1,218 @@
-body{
-  margin:0;
-  font-family:Inter, Arial, sans-serif;
-  background:white;
-  color:#18181b;
-}
-
-
-.solutions-page{
-  overflow:hidden;
-}
-
-
-/* ================= HERO ================= */
-
-.solution-hero{
-
-  min-height:85vh;
-
-  display:flex;
-  align-items:center;
-
-  margin:20px;
-
-  border-radius:25px;
-
-  background:#fff7ee;
-
-  padding:70px 80px;
-
-  box-shadow:0 20px 50px rgba(0,0,0,0.08);
-
-  overflow:hidden;
-
-}
-
-
-.hero-wrapper{
-
-  width:100%;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:space-between;
-
-  gap:40px;
-
-}
-
-
-
-/* LEFT */
-
-.hero-content{
-
-  width:55%;
-
-  text-align:left;
-
-}
-
-
-.badge{
-
-  display:inline-block;
-
-  background:white;
-
-  padding:10px 25px;
-
-  border-radius:30px;
-
-  color:#6d4aff;
-
-  font-weight:700;
-
-}
-
-
-.hero-content h1{
-
-  font-size:55px;
-
-  line-height:1.15;
-
-  margin:30px 0;
-
-  font-weight:800;
-
-}
-
-
-.hero-content h1 span{
-
-  background:linear-gradient(
-  90deg,
-  #4748d5,
-  #9c48ea
-  );
-
-  -webkit-background-clip:text;
-
-  color:transparent;
-
-}
-
-
-.hero-content p{
-
-  font-size:18px;
-
-  color:#666;
-
-  line-height:1.6;
-
-}
-
-
-
-/* BUTTON */
-
-.hero-buttons{
-
-  display:flex;
-
-  gap:20px;
-
-  margin-top:35px;
-
-}
-
-
-.hero-buttons button{
-
-  padding:15px 30px;
-
-  border-radius:40px;
-
-  border:none;
-
-  background:#6d4aff;
-
-  color:white;
-
-  font-weight:700;
-
-}
-
-
-.outline{
-
-  background:white!important;
-
-  color:#6d4aff!important;
-
-  border:2px solid #ddd!important;
-
-}
-
-
-
-/* RIGHT IMAGE */
-
-.hero-image{
-
-  width:55%;
-
-  display:flex;
-
-  justify-content:center;
-
-  align-items:center;
-
-}
-
-
-.hero-image img{
-
-  width:100%;
-
-  max-width:520px;
-
-  height:auto;
-
-  object-fit:contain;
-
-}
-
-
-
-/* RESPONSIVE */
-
-@media(max-width:1000px){
-
-
-.hero-wrapper{
-
-  flex-direction:column;
-
-}
-
-
-.hero-content,
-.hero-image{
-
-  width:100%;
-
-  text-align:center;
-
-}
-
-
-.hero-content h1{
-
-  font-size:40px;
-
-}
-
-
-.hero-image img{
-
-  max-width:350px;
-
-}
-
-}
-/* ================= CARDS ================= */
-
-.solution-grid{
-  width:95%;
-  max-width:1700px;
-  margin:40px auto;
-  padding:100px;
-  border-radius:40px;
-  background:#fff7ee;
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:30px;
-}
-
-
-
-
-.solution-card{
-
-
-  background:
-  rgba(255,255,255,.65);
-position: relative;
-  overflow: hidden;
-
-  backdrop-filter:blur(15px);
-
-  border-top: 5px solid #6c4cff;
-
-
-  border:2px solid white;
-
-
-  border-radius:32px;
-
-
-  padding:15px;
-
-
-  min-height:300px;
-
-
-  transition:all 0.4s ease;
-
-
-  box-shadow:
-  0 20px 40px #4648d420;
-
-
-}
-.solution-card:nth-child(1) .icon{
-  background: #e9ddff;
-}
-
-.solution-card:nth-child(2) .icon{
-  background: #dff1ff;
-}
-
-.solution-card:nth-child(3) .icon{
-  background: #ffe7c8;
-}
-
-.solution-card:nth-child(4) .icon{
-  background: #dff8ea;
-}
-.solution-card:nth-child(1){
-  background: linear-gradient(
-    135deg,
-    #f8f5ff,
-    #efe8ff
-  );
-}
-
-.solution-card:nth-child(2){
-  background: linear-gradient(
-    135deg,
-    #f3faff,
-    #e6f4ff
-  );
-}
-
-.solution-card:nth-child(3){
-  background: linear-gradient(
-    135deg,
-    #fff8ef,
-    #fff1dd
-  );
-}
-.solution-card:nth-child(4){
-  background: #eefcf5;
-}
-
-.solution-card:nth-child(5){
-  background: #fff0f5;
-}
-
-.solution-card:nth-child(6){
-  background: #f3f4ff;
-}
-
-.solution-card:nth-child(7){
-  background: #fff9e6;
-}
-
-.solution-card:nth-child(8){
-  background: #eefcff;
-}
-.solution-card::after{
-  content: "★";
-  position: absolute;
-  right: 20px;
-  bottom: 20px;
-  font-size: 70px;
-  opacity: 0.05;
-}
-.solution-card::before{
-  content: "";
-  position: absolute;
-  top: -50px;
-  right: -50px;
-  width: 150px;
-  height: 150px;
-  background: radial-gradient(
-    circle,
-    rgba(108,76,255,0.15),
-    transparent 70%
-  );
-   opacity:0.05;
-}
-.benefits{
-  list-style: none;
+/* ==========================================================================
+   GLOBAL RESET & GRADIENT BACKGROUND
+   ========================================================================== */
+* {
+  margin: 0;
   padding: 0;
-  margin: 20px 0;
+  box-sizing: border-box;
 }
 
-.benefits li{
-  display: flex;
-  align-items: center;
-  margin-bottom: 12px;
-  font-size: 14px;
-  color: #444;
-  padding: 8px 12px;
-  background: rgba(108,76,255,0.05);
-  border-radius: 12px;
-  transition: 0.3s;
+body {
+  font-family: 'Poppins', Inter, Arial, sans-serif;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fcf9 20%, #edf7f3 60%, #ffffff 100%);
+  color: #011b17;
 }
 
-.benefits li:hover{
-  transform: translateX(5px);
+.solutions-page {
+  overflow: hidden;
 }
 
-.benefits li::before{
-  content: "check";
-  font-family: 'Material Symbols Outlined';
-  margin-right: 10px;
-  color: #6c4cff;
-  font-size: 18px;
-}
-
-.solution-card:hover{
-border-top-width: 8px;
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(108,76,255,0.15);
-}
-
-
-
-
-.solutioncard-top{
-
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
-
-}
-
-
-
-
-.number{
-
-
-  font-size:40px;
-
-  font-weight:800;
-
-  opacity:.15;
-
-
-}
-
-
-
-
-
-.solutionicon{
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 70px;
-  height: 70px;
-  background: #ece7ff;
-  border-radius: 20px;
+/* ==========================================================================
+   HERO SECTION (Retained as per request)
+   ========================================================================== */
+.solution-hero {
+  width: 100%;
+  background: linear-gradient(90deg, #001a16 0%, #00392f 55%, #005044 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 100px 60px !important;
 }
 
-
-
-
-
-
-.material-symbols-outlined{
- color: #6c4cff;
-font-size:34px;
-
+.hero-wrapper {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
 }
 
+.hero-content { flex: 1; max-width: 700px; }
 
-
-
-
-.solution-card h3{
-
-
-  font-size:22px;
-
-
-  margin-top:35px;
-
-
+.badge {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #66f5cf;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-
-
-.solution-card p{
-
-
-  color:#666;
-
-
-  line-height:1.8;
-
-
+.hero-content h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  font-weight: 900;
+  color: white;
+  margin: 25px 0;
 }
 
-
-
-.solution-card a{
-
-
-  color:#6d4aff;
-
-
-  font-weight:700;
-
-
-  text-decoration:none;
-
-
+.hero-content h1 span {
+  background: linear-gradient(135deg, #69f0c7, #9effe3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
-
-/* ================= RESPONSIVE ================= */
-
-
-@media(max-width:1200px){
-
-
-.solution-grid{
-
-  grid-template-columns:repeat(2,1fr);
-
+.hero-content p {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #cde8e2;
+  margin-bottom: 35px;
 }
 
+.hero-buttons { display: flex; gap: 15px; }
 
+.hero-buttons button {
+  padding: 16px 36px;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
-
-
-
-
-@media(max-width:900px){
-
-
-
-.hero-content h1{
-
-  font-size:40px;
-
+.hero-buttons button:first-child {
+  background: linear-gradient(135deg, #20d59f, #60f0cf);
+  color: #00241d;
 }
 
-
-
-.solution-grid{
-
-  grid-template-columns:1fr;
-
+.outline {
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
 }
 
+.hero-image { flex: 1; display: flex; justify-content: center; align-items: center; }
 
-
-.cta{
-
-  margin:20px;
-
-  padding:50px 25px;
-
+.hero-image img {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 35px;
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.45);
 }
 
-
-
-.cta h2{
-
-  font-size:35px;
-
+/* ==========================================================================
+   MODERN BENTO GRID SOLUTIONS SECTION
+   ========================================================================== */
+.solution-grid {
+  width: 95%;
+  max-width: 1300px;
+  margin: 80px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
 }
 
-
-
+.solution-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 32px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.05);
 }
 
-
-
-
-
-@media(max-width:600px){
-
-
-.hero-buttons{
-
-  flex-direction:column;
-
+.solution-card:hover {
+  transform: translateY(-15px);
+  background: rgba(255, 255, 255, 0.95);
+  border-color: #10b981;
+  box-shadow: 0 30px 60px rgba(16, 185, 129, 0.15);
 }
 
-
-
-.hero-buttons button{
-
-  width:100%;
-
+.number {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #10b981;
+  opacity: 0.1;
+  pointer-events: none;
 }
 
-
-
-.hero-content p{
-
-  font-size:16px;
-
+.solutionicon {
+  width: 65px;
+  height: 65px;
+  border-radius: 20px;
+  background: #011b17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  transition: 0.4s;
 }
 
-
-
+.solution-card:hover .solutionicon {
+  background: #10b981;
+  transform: scale(1.1);
 }
+
+.material-symbols-outlined { color: white; font-size: 34px; }
+
+.solution-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #011b17;
+  margin-bottom: 15px;
+}
+
+.solution-card p {
+  color: #55726b;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Benefits Section */
+.benefits {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits li {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #011b17;
+  display: flex;
+  align-items: center;
+}
+
+.benefits li::before {
+  content: "✦";
+  margin-right: 12px;
+  color: #10b981;
+  font-size: 18px;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1200px) {
+  .hero-wrapper { flex-direction: column; text-align: center; }
+  .hero-content h1 { font-size: 42px !important; }
+}
+
 @media (max-width: 768px) {
-
-  .solution-hero{
-    margin: 10px;
-    padding: 30px 20px;
-    min-height: auto;
-  }
-
-  .hero-wrapper{
-    flex-direction: column;
-    gap: 25px;
-  }
-
-  .hero-content,
-  .hero-image{
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-content h1{
-    font-size: 38px !important;
-    line-height: 1.2;
-  }
-
-  .hero-content p{
-    font-size: 16px;
-  }
-
-  .hero-buttons{
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hero-buttons button{
-    width: 100%;
-  }
-
-  .hero-image img{
-    max-width: 280px;
-  }
-
-  .solution-grid{
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin: 10px;
-    gap: 20px;
-  }
-
-  .solution-card{
-    min-height: auto;
-    padding: 20px;
-  }
-
-  .solution-card h3{
-    font-size: 22px;
-  }
-
-  .solutionicon{
-    width: 55px;
-    height: 55px;
-  }
-
-  .number{
-    font-size: 28px;
-  }
-
+  .solution-hero { padding: 60px 25px !important; }
+  .solution-card { padding: 30px; }
+  .hero-buttons { flex-direction: column; }
 }

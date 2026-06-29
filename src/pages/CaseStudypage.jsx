@@ -62,6 +62,7 @@ const CaseStudypage = () => {
               <div className="featured-image malar-image">
   <img src="/malarrice.png" alt="Malar Rice" />
 </div>
+
               <h3>Malar Rice</h3>
               <p>
                 Transforming Customer Loyalty & Sales with Smart Coupons

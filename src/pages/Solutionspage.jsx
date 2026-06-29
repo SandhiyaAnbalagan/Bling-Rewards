@@ -56,57 +56,50 @@ return(
 </div>
 
 {/* Hero */}
-
+{/* Hero */}
 <section className="solution-hero">
-<div className="hero-wrapper">
-<div className="hero-content">
-<div className="hero-image">
+  <div className="hero-wrapper">
 
-</div>
-<span className="badge">
-OUR SOLUTIONS
-</span>
+    {/* Left Content */}
+    <div className="hero-content">
 
+      <span className="badge">
+        OUR SOLUTIONS
+      </span>
 
-<h1>
-Complete 
-<span> Loyalty & Engagement </span>
-<br/>
-Solutions for Your Brand
-</h1>
+      <h1>
+        Complete
+        <span> Loyalty & Engagement </span>
+        <br />
+        Solutions for Your Brand
+      </h1>
 
+      <p>
+        Bling Reward is a complete ecosystem designed to build loyalty,
+        increase repeat purchases, and grow your brand's market presence
+        through immersive technology.
+      </p>
 
-<p>
-Bling Reward is a complete ecosystem designed to build loyalty,
-increase repeat purchases, and grow your brand’s market presence
-through immersive technology.
-</p>
+      <div className="hero-buttons">
+        <button>Explore Solutions</button>
 
+        <button className="outline">
+          View Case Studies
+        </button>
+      </div>
 
-<div className="hero-buttons">
+    </div>
 
-<button>
-Explore Solutions
-</button>
+    {/* Right Image */}
+    <div className="hero-image">
+      <img
+        src="/solution-banner.jpeg"
+        alt="Solutions"
+      />
+    </div>
 
-<button className="outline">
-View Case Studies
-</button>
-
-</div>
-
-
-</div >
-<div className="hero-image">
-<img 
-src="/solution-banner.jpeg"
-alt="Solutions"
-/>
-</div>
-</div>
+  </div>
 </section>
-
-
 
 {/* Cards */}
 

@@ -1,69 +1,517 @@
 .industries-container {
-  text-align: center;
-  padding: 40px 60px;
-  background: #f5f1eb;
+
+
+  text-align:center;
+
+
+  padding:80px 20px;
+
+
+
+  background:
+
+
+  radial-gradient(
+    circle at top right,
+    rgba(52,211,153,.18),
+    transparent 35%
+  ),
+
+
+  radial-gradient(
+    circle at bottom left,
+    rgba(212,175,55,.12),
+    transparent 35%
+  ),
+
+
+  linear-gradient(
+    180deg,
+    #eef3f1 0%,
+    #e4ebe8 100%
+  );
+
+
+
+  position:relative;
+
+
+  overflow:hidden;
+
+
 }
+
+
+
+
+
+
+.industries-container::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+
+  width:380px;
+
+
+  height:380px;
+
+
+
+  background:#34d399;
+
+
+
+  border-radius:50%;
+
+
+
+  filter:blur(150px);
+
+
+
+  opacity:.15;
+
+
+
+  top:-120px;
+
+
+  right:-100px;
+
+
+}
+
+
+
+
 
 .industries-container h2 {
-  font-size: 35px;
-  margin-bottom: 50px;
+
+
+  font-size:44px;
+
+
+
+  font-weight:900;
+
+
+
+  margin-bottom:50px;
+
+
+
+  color:#073b36;
+
+
+
+  position:relative;
+
+
+
+  z-index:2;
+
+
 }
+
+
+
+
 
 .industries-container span {
-  color: #6c4cff;
-  font-weight: 600;
+
+
+  background:
+
+
+  linear-gradient(
+
+  135deg,
+
+  #0f766e,
+
+  #34d399,
+
+  #d4af37
+
+  );
+
+
+
+  -webkit-background-clip:text;
+
+
+
+  -webkit-text-fill-color:transparent;
+
+
+
+  font-weight:800;
+
+
 }
+
+
+
+
+
+
+
+/* BRAND CARDS */
+
 
 .brands-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+
+
+  display:flex;
+
+
+
+  justify-content:center;
+
+
+
+  align-items:center;
+
+
+
+  gap:35px;
+
+
+
+  flex-wrap:wrap;
+
+
+
+  overflow-x:auto;
+
+
+
+  margin-bottom:40px;
+
+
+
+  position:relative;
+
+
+
+  z-index:2;
+
+
 }
+
+
+
+
+
 
 .brand-card {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+
+
+  background:
+
+
+  rgba(255,255,255,.72);
+
+
+
+  backdrop-filter:blur(25px);
+
+
+
+  -webkit-backdrop-filter:blur(25px);
+
+
+
+  border:
+
+
+  1px solid rgba(255,255,255,.8);
+
+
+
+  border-radius:26px;
+
+
+
+  padding:28px;
+
+
+
+  min-width:210px;
+
+
+
+  display:flex;
+
+
+
+  justify-content:center;
+
+
+
+  align-items:center;
+
+
+
+  box-shadow:
+
+
+  0 20px 45px rgba(6,45,42,.12);
+
+
+
+  transition:.35s ease;
+
+
 }
 
-/* 🔥 MAIN FIX */
+
+
+
+
+
+.brand-card:hover {
+
+
+  transform:translateY(-10px);
+
+
+
+  box-shadow:
+
+
+  0 30px 65px rgba(6,45,42,.22);
+
+
+}
+
+
+
+
+
 .brand-card img {
-  max-width: 160px;   
-  height: 60px;      
-  object-fit: contain;
-  transition: 0.3s;
+
+
+  max-width:140px;
+
+
+
+  height:60px;
+
+
+
+  object-fit:contain;
+
+
+
+  transition:.3s;
+
+
 }
 
-/* hover effect */
+
+
+
+
 .brand-card img:hover {
-  transform: scale(1.5);
-}
-/* default logos */
-.brand-card img {
-  max-width: 140px;
-  height: 60px;
-  object-fit: contain;
+
+
+  transform:scale(1.1);
+
+
 }
 
-/* 🔥 only 2 logos fix */
+
+
+
+
 .big-logo {
-  transform: scale(1.6);
+
+
+  transform:scale(1);
+
+
 }
-/* button */
+
+
+
+
+
+
+/* BUTTON */
+
+
 .view-btn {
-  margin-top: 25px;
-  padding: 10px 22px;
-  border: 1px solid #6c4cff;
-  color: #6c4cff;
-  background: transparent;
-  border-radius: 8px;
-  cursor: pointer;
+
+
+  margin-top:25px;
+
+
+
+  padding:15px 32px;
+
+
+
+  border:none;
+
+
+
+  color:white;
+
+
+
+  background:
+
+
+  linear-gradient(
+
+  135deg,
+
+  #0f766e,
+
+  #34d399,
+
+  #d4af37
+
+  );
+
+
+
+  border-radius:15px;
+
+
+
+  cursor:pointer;
+
+
+
+  font-size:16px;
+
+
+
+  font-weight:700;
+
+
+
+  box-shadow:
+
+
+  0 15px 35px rgba(15,118,110,.35);
+
+
+
+  transition:.35s ease;
+
+
 }
+
+
+
+
 
 .view-btn:hover {
-  background: #6c4cff;
-  color: #fff;
+
+
+  transform:translateY(-5px);
+
+
+
+  box-shadow:
+
+
+  0 25px 50px rgba(15,118,110,.45);
+
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:768px){
+
+
+.industries-container {
+
+
+padding:60px 20px;
+
+
+}
+
+
+
+
+.industries-container h2 {
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+.brands-row {
+
+
+gap:20px;
+
+
+}
+
+
+
+
+
+.brand-card {
+
+
+min-width:150px;
+
+
+padding:20px;
+
+
+}
+
+
+
+
+
+.brand-card img {
+
+
+max-width:100px;
+
+
+height:45px;
+
+
+}
+
+
+
+
+.big-logo {
+
+
+transform:scale(1.1);
+
+
+}
+
+
+
 }

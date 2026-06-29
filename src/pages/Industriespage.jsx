@@ -2,6 +2,7 @@ import React from "react";
 import "./Industriespage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 const industries = [
   {
     id: "01",
@@ -9,6 +10,7 @@ const industries = [
     description:
       "Turn impulse buyers into loyal customers through cashback, spin-to-win campaigns, and refill reminders.",
     icon: "🛒",
+    keyword: "ecommerce-shopping"
   },
   {
     id: "02",
@@ -16,6 +18,7 @@ const industries = [
     description:
       "Drive repeat purchases with exclusive member rewards, cashback campaigns, and personalized offers.",
     icon: "👕",
+    keyword: "clothing-store"
   },
   {
     id: "03",
@@ -23,6 +26,7 @@ const industries = [
     description:
       "Reward servicing, parts purchases, and test drives with cashback and targeted offers.",
     icon: "🚗",
+    keyword: "car-service"
   },
   {
     id: "04",
@@ -30,6 +34,7 @@ const industries = [
     description:
       "Build contractor and influencer loyalty through QR-based tracking and instant rewards.",
     icon: "🎨",
+    keyword: "home-renovation"
   },
   {
     id: "05",
@@ -37,6 +42,7 @@ const industries = [
     description:
       "Engage active communities with challenges, leaderboards, and milestone-based rewards.",
     icon: "🏋️",
+    keyword: "gym-workout"
   },
   {
     id: "06",
@@ -44,6 +50,7 @@ const industries = [
     description:
       "Encourage repeat purchases with cashback on prescriptions, gamified health challenges, and targeted offers.",
     icon: "💊",
+    keyword: "pharmacy-medicine"
   },
   {
     id: "07",
@@ -51,6 +58,7 @@ const industries = [
     description:
       "Drive trust and loyalty with warranty-based QR registrations, cashback on purchases, and after-sales engagement.",
     icon: "🩺",
+    keyword: "medical-equipment"
   },
   {
     id: "08",
@@ -58,6 +66,7 @@ const industries = [
     description:
       "Boost brand stickiness with product registration rewards, spin-to-win campaigns, and cashback incentives.",
     icon: "💻",
+    keyword: "gadgets-laptop"
   },
   {
     id: "09",
@@ -65,6 +74,7 @@ const industries = [
     description:
       "Engage distributors and consumers with festival-themed rewards and instant cashback programs.",
     icon: "🍷",
+    keyword: "lounge-bar"
   },
   {
     id: "10",
@@ -72,6 +82,7 @@ const industries = [
     description:
       "Incentivize repeat orders from dealers and end users with season-based loyalty campaigns.",
     icon: "🌾",
+    keyword: "farming-field"
   },
   {
     id: "11",
@@ -79,6 +90,7 @@ const industries = [
     description:
       "Delight customers with tiered cashback, limited-time reward drops, and premium loyalty experiences.",
     icon: "💄",
+    keyword: "makeup-cosmetics"
   },
   {
     id: "12",
@@ -86,6 +98,7 @@ const industries = [
     description:
       "Encourage repeat buyers with exclusive cashback, reward points, and QR-based warranty incentives.",
     icon: "👟",
+    keyword: "sneakers-shoes"
   },
   {
     id: "13",
@@ -93,6 +106,7 @@ const industries = [
     description:
       "Reward pet owners with cashback, refill reminders, and gamified pet-care challenges.",
     icon: "🐾",
+    keyword: "pets-dog"
   },
   {
     id: "14",
@@ -100,6 +114,7 @@ const industries = [
     description:
       "Drive exclusivity through premium cashback offers, referral rewards, and loyalty tiers.",
     icon: "⌚",
+    keyword: "luxury-watch"
   },
   {
     id: "15",
@@ -107,6 +122,7 @@ const industries = [
     description:
       "Inspire healthy lifestyles with subscription rewards, fitness challenges, and purchase incentives.",
     icon: "💪",
+    keyword: "proteins-wellness"
   },
   {
     id: "16",
@@ -114,6 +130,7 @@ const industries = [
     description:
       "Motivate contractors and resellers with cashback, warranty registrations, and seasonal bonuses.",
     icon: "🚿",
+    keyword: "bathroom-interior"
   },
   {
     id: "17",
@@ -121,6 +138,7 @@ const industries = [
     description:
       "Enhance customer experience with loyalty points, repeat purchase rewards, and influencer campaigns.",
     icon: "🌸",
+    keyword: "perfume-spray"
   },
   {
     id: "18",
@@ -128,6 +146,7 @@ const industries = [
     description:
       "Incentivize contractors and dealers through bulk-purchase cashback and QR-linked loyalty points.",
     icon: "🔧",
+    keyword: "hardware-tools"
   },
   {
     id: "19",
@@ -135,6 +154,7 @@ const industries = [
     description:
       "Reward parents with cashback, subscription perks, and milestone-based engagement programs.",
     icon: "👶",
+    keyword: "baby-care"
   },
   {
     id: "20",
@@ -142,6 +162,7 @@ const industries = [
     description:
       "Boost repeat orders with festival reward campaigns, bundle cashback offers, and retailer incentives.",
     icon: "💡",
+    keyword: "modern-lighting"
   },
   {
     id: "21",
@@ -149,6 +170,7 @@ const industries = [
     description:
       "Drive repeat orders with festival reward campaigns, cashback on bundles, and gamified retailer incentives.",
     icon: "🧴",
+    keyword: "skincare-lotion"
   },
 ];
 
@@ -188,7 +210,7 @@ function Industriespage() {
           </div>
         </section>
 
-        {/* INDUSTRIES GRID */}
+        {/* MODERN ALTERNATING MAGAZINE GRID */}
         <section className="industries-grid-section">
           <div className="section-header">
             <h2>
@@ -199,19 +221,36 @@ function Industriespage() {
           <div className="industries-grid">
             {industries.map((industry) => (
               <div className="industry-card" key={industry.id}>
-                <div className="industry-number">{industry.id}</div>
-
-                <div className="industry-icon">
-                  {industry.icon}
+                
+                {/* Topic Specific Media Screen Panel */}
+                <div className="card-media-side">
+                  <div className="industry-number">{industry.id}</div>
+                  
+                  {/* Dynamic Source URL Injection using the topic specific keyword keys */}
+                  <img 
+                    src={`https://images.unsplash.com/photo-1542838132-92c53300491e?w=600&q=80&auto=format&fit=crop&sig=${industry.id}`}
+                    alt={industry.title} 
+                    loading="lazy"
+                    className="industry-bg-image"
+                  />
                 </div>
 
-                <h3>{industry.title}</h3>
-
-                <p>{industry.description}</p>
-                <div className="industry-features">
-                     <p>✓ Loyalty Programs</p>
-                      <p>✓ Cashback Rewards</p>
-                      <p>✓ QR Engagement</p>
+                {/* Content Side Details Screen Component */}
+                <div className="card-content-side">
+                  <h3>
+                    <span className="industry-icon">{industry.icon}</span> 
+                    {industry.title}
+                  </h3>
+                  
+                  <p>{industry.description}</p>
+                  
+                  <div className="industry-features">
+                    <p>✓ Loyalty Engine</p>
+                    <p>✓ Custom Rewards</p>
+                    <p>✓ Retention Pack</p>
+                  </div>
+                  
+                  <button className="learn-more">Learn More →</button>
                 </div>
                 
               </div>
@@ -219,7 +258,7 @@ function Industriespage() {
           </div>
         </section>
 
-        {/* WHY CHOOSE */}
+        {/* WHY CHOOSE SECTION */}
         <section className="why-section">
           <h2>
             Why Industries Choose <span>Bling Rewards</span>

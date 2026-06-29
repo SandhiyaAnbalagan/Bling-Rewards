@@ -135,38 +135,53 @@ function Servicespage() {
         </section>
 
         {/* SERVICES */}
-        <section className="brs-services-section">
+     <section className="brs-services-section">
+  <h2 className="brs-section-title">
+    Solutions Designed <span>For Growth</span>
+  </h2>
+  <p className="brs-sub-text">
+    Powerful loyalty and engagement solutions to grow your business
+    and delight your customers.
+  </p>
 
-          <h2 className="brs-section-title">
-            Solutions Designed <span>For Growth</span>
-          </h2>
-
-          <p className="brs-sub-text">
-            Powerful loyalty and engagement solutions to grow your business
-            and delight your customers.
-          </p>
-
-      <div className="brs-services-grid">
-  {servicesData.map((item, index) => (
-    <div className="brs-service-card" key={index}>
-
-      <div className="brs-service-icon">
-        {item.icon}
-      </div>
-
-      <h3>{item.title}</h3>
-      <p>{item.desc}</p>
-
+    <div className="brs-solutions-flow">
+    <div className="arrow-tip" style={{
+      width: '0', height: '0', 
+      borderLeft: '20px solid transparent', 
+      borderRight: '20px solid transparent', 
+      borderBottom: '30px solid #22c55e',
+      marginBottom: '-20px'
+    }}></div>
+    {/* 7th Item - Top Card */}
+    <div className="brs-service-card brs-top-card">
+      <div className="brs-service-icon">{servicesData[6].icon}</div>
+      <h3>{servicesData[6].title}</h3>
+      <p>{servicesData[6].desc}</p>
       <ul className="brs-points">
-        {item.points.map((point, i) => (
-          <li key={i}>● {point}</li>
-        ))}
+        {servicesData[6].points.map((p, i) => <li key={i}>{p}</li>)}
       </ul>
-
     </div>
-  ))}
-</div>
-        </section>
+
+  
+    {[0, 2, 4].map((index) => (
+      <div className="brs-flow-row" key={index}>
+        
+        <div className="brs-service-card">
+          <div className="brs-service-icon">{servicesData[index].icon}</div>
+          <h3>{servicesData[index].title}</h3>
+          <p>{servicesData[index].desc}</p>
+        </div>
+        
+        
+        <div className="brs-service-card">
+          <div className="brs-service-icon">{servicesData[index+1].icon}</div>
+          <h3>{servicesData[index+1].title}</h3>
+          <p>{servicesData[index+1].desc}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
 
         {/* WHY CHOOSE */}
         <section className="brs-why-section">

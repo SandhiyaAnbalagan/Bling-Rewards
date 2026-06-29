@@ -1,152 +1,720 @@
 .rewards-container {
-  padding: 80px 60px;
-  background: #f7f7f7;  
-  text-align: center;
+
+
+  padding:80px 60px;
+
+
+
+  background:
+
+
+  radial-gradient(
+    circle at top left,
+    rgba(52,211,153,.18),
+    transparent 35%
+  ),
+
+
+  radial-gradient(
+    circle at bottom right,
+    rgba(212,175,55,.12),
+    transparent 35%
+  ),
+
+
+  linear-gradient(
+    180deg,
+    #eef3f1,
+    #e4ebe8
+  );
+
+
+
+  text-align:center;
+
+
+  position:relative;
+
+
+  overflow:hidden;
+
+
 }
+
+
+
+
+
+.rewards-container::before {
+
+
+  content:"";
+
+
+  position:absolute;
+
+
+
+  width:380px;
+
+
+  height:380px;
+
+
+
+  background:#34d399;
+
+
+
+  border-radius:50%;
+
+
+
+  filter:blur(150px);
+
+
+
+  opacity:.15;
+
+
+
+  top:-120px;
+
+
+  left:-100px;
+
+
+}
+
+
+
+
+
+
+/* Heading */
 
 
 .rewards-container h2 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 40px;
+
+
+  font-size:44px;
+
+
+
+  font-weight:900;
+
+
+
+  margin-bottom:45px;
+
+
+
+  color:#073b36;
+
+
+
+  position:relative;
+
+
+
+  z-index:2;
+
+
 }
 
-/* 🔥 double color effect */
+
+
+
+
 .rewards-container h2 span {
-  background: linear-gradient(90deg, #6c4cff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+
+
+  background:
+
+
+  linear-gradient(
+
+  135deg,
+
+  #0f766e,
+
+  #34d399,
+
+  #d4af37
+
+  );
+
+
+
+  -webkit-background-clip:text;
+
+
+
+  -webkit-text-fill-color:transparent;
+
+
 }
 
-/* outer soft box */
+
+
+
+
+
+/* Testimonial Wrapper */
+
+
 .testimonial-wrapper {
-  background:  #fcf7f2;   
-  padding: 40px;
-  border-radius: 20px;
+
+
+  position:relative;
+
+
+
+  background:
+
+
+  rgba(255,255,255,.65);
+
+
+
+  backdrop-filter:blur(25px);
+
+
+
+  padding:45px;
+
+
+
+  border-radius:32px;
+
+
+
+  border:
+
+
+  1px solid rgba(255,255,255,.8);
+
+
+
+  box-shadow:
+
+
+  0 25px 60px rgba(6,45,42,.15);
+
+
 }
+
+
+
+
 
 .testimonial-row {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
+
+
+  display:flex;
+
+
+
+  gap:30px;
+
+
+
+  justify-content:center;
+
+
 }
 
-/* 🔥 CARD STYLE (important) */
+
+
+
+
+
+
+/* Cards */
+
+
 .testimonial-card {
-  background: #f5f5f7 ;
-  padding: 30px;
-  border-radius: 20px;
-  width: 320px;
-  text-align: left;
-  position: relative;
+
+
+  background:
+
+
+  rgba(255,255,255,.75);
+
+
+
+  backdrop-filter:blur(20px);
+
+
+
+  padding:32px;
+
+
+
+  border-radius:28px;
+
+
+
+  width:320px;
+
+
+
+  text-align:left;
+
+
+
+  position:relative;
+
+
+
+  border:
+
+
+  1px solid rgba(255,255,255,.8);
+
+
+
+  box-shadow:
+
+
+  0 20px 45px rgba(6,45,42,.12);
+
+
+
+  transition:.35s ease;
+
+
 }
 
-/* quote */
+
+
+
+
+.testimonial-card:hover {
+
+
+  transform:translateY(-10px);
+
+
+
+  box-shadow:
+
+
+  0 30px 70px rgba(6,45,42,.22);
+
+
+}
+
+
+
+
+
+
+/* Quote */
+
+
 .quote {
-  font-size: 40px;
-  color: #7b61ff;
-  margin-bottom: 10px;
+
+
+  font-size:45px;
+
+
+
+  color:#d4af37;
+
+
+
+  margin-bottom:15px;
+
+
 }
 
-/* text */
+
+
+
+
+
+/* Text */
+
+
 .text {
-  font-size: 15px;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
+
+
+  font-size:15px;
+
+
+
+  color:#5c716d;
+
+
+
+  line-height:1.8;
+
+
+
+  margin-bottom:22px;
+
+
 }
 
-/* bottom section */
+
+
+
+
+
+
+/* Bottom */
+
+
 .bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+
+  display:flex;
+
+
+
+  justify-content:space-between;
+
+
+
+  align-items:center;
+
+
 }
+
+
+
+
 
 .role {
-  font-size: 13px;
-  color: #777;
+
+
+  font-size:13px;
+
+
+
+  color:#78918b;
+
+
 }
+
+
+
+
 
 .company {
-  font-weight: 600;
+
+
+  font-weight:800;
+
+
+
+  color:#073b36;
+
+
 }
 
-/* logo */
+
+
+
+
+
+/* Logo */
+
+
 .bottom img {
-  width: 70px;
-  object-fit: contain;
+
+
+  width:70px;
+
+
+
+  object-fit:contain;
+
+
 }
 
-/* dots */
+
+
+
+
+
+/* Dots */
+
+
 .dots {
-  margin-top: 25px;
+
+
+  margin-top:30px;
+
+
 }
+
+
+
+
 
 .dots span {
-  width: 8px;
-  height: 8px;
-  margin: 0 5px;
-  background: #ccc;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
+
+
+  width:10px;
+
+
+
+  height:10px;
+
+
+
+  margin:0 6px;
+
+
+
+  background:#cbd5d1;
+
+
+
+  display:inline-block;
+
+
+
+  border-radius:50%;
+
+
+
+  cursor:pointer;
+
+
+
+  transition:.3s;
+
+
 }
+
+
+
+
 
 .dots .active {
-  background: #7b61ff;
-}
-/* wrapper important */
-.testimonial-wrapper {
-  position: relative;
-  background:  #f5f1eb;
-  padding: 40px;
-  border-radius: 20px;
+
+
+  background:#0f766e;
+
+
 }
 
-/* arrows */
+
+
+
+
+
+
+/* Arrows */
+
+
 .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #fff;
-  border: none;
-  font-size: 22px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+
+  position:absolute;
+
+
+
+  top:50%;
+
+
+
+  transform:translateY(-50%);
+
+
+
+  background:
+
+
+  linear-gradient(
+
+  135deg,
+
+  #0f766e,
+
+  #34d399,
+
+  #d4af37
+
+  );
+
+
+
+  color:white;
+
+
+
+  border:none;
+
+
+
+  font-size:20px;
+
+
+
+  width:50px;
+
+
+
+  height:50px;
+
+
+
+  border-radius:50%;
+
+
+
+  cursor:pointer;
+
+
+
+  box-shadow:
+
+
+  0 15px 35px rgba(15,118,110,.35);
+
+
+
+  transition:.35s;
+
+
 }
 
-/* left */
+
+
+
+
 .arrow.left {
-  left: -20px;
+
+
+  left:-25px;
+
+
 }
 
-/* right */
+
+
+
+
 .arrow.right {
-  right: -20px;
+
+
+  right:-25px;
+
+
 }
 
-/* hover */
+
+
+
+
 .arrow:hover {
-  background: #7b61ff;
-  color: #fff;
+
+
+  transform:
+
+
+  translateY(-50%)
+
+  scale(1.1);
+
+
+
+  box-shadow:
+
+
+  0 25px 50px rgba(15,118,110,.45);
+
+
 }
-@media (max-width: 768px) {
 
-  .testimonial-row {
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .testimonial-card {
-    width: 100%;
-    max-width: 320px;
-  }
 
-  .arrow {
-    display: none;
-  }
+
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+
+.rewards-container {
+
+
+padding:60px 20px;
+
+
+}
+
+
+
+
+.rewards-container h2 {
+
+
+font-size:32px;
+
+
+}
+
+
+
+
+
+.testimonial-wrapper {
+
+
+padding:25px;
+
+
+}
+
+
+
+
+.testimonial-row {
+
+
+flex-direction:column;
+
+
+align-items:center;
+
+
+}
+
+
+
+
+.testimonial-card {
+
+
+width:100%;
+
+
+max-width:340px;
+
+
+}
+
+
+
+
+
+.arrow {
+
+
+display:none;
+
+
+}
+
+
+
 }

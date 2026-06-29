@@ -4,7 +4,9 @@ function About() {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
-        <h2 className="about-title">About Us</h2>
+       <h2 className="about-title">
+  About <span>Us</span>
+</h2>
 
         <p className="about-text">
           We are not just a loyalty platform solution; We are a one-stop
