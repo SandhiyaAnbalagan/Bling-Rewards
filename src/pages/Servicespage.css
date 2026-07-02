@@ -646,7 +646,7 @@ body{
     }
 }
 
-@media(max-width:992px){
+@media(max-width:1024px){
 
     .brs-hero{
         flex-direction:column;
@@ -750,7 +750,7 @@ body{
     }
 }
 
-/* ===== Premium Sky Blue + Violet Theme Override ===== */
+
 
 body{
     background:

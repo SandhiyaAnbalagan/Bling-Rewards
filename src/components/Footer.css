@@ -526,7 +526,7 @@
    MOBILE
 ========================= */
 
-@media(max-width:768px){
+@media(max-width:668px){
 
   .footer-grid{
 
@@ -565,50 +565,6 @@
 
     font-size:16px;
 
-  }
-
-}
-
-@media (max-width:480px){
-
-  .footer-top{
-    padding:40px 15px;
-  }
-
-  .footer-top h1{
-    font-size:24px;
-  }
-
-  .footer-top p{
-    font-size:14px;
-  }
-
-  .demo-btn,
-  .sales-btn{
-    font-size:15px;
-    padding:12px 18px;
-  }
-
-  .footer-column h3{
-    font-size:18px;
-  }
-
-  .footer-column p,
-  .footer-column a{
-    font-size:14px;
-  }
-
-  .newsletter-title h3{
-    font-size:18px;
-  }
-
-  .subscribe-box{
-    height:45px;
-  }
-
-  .subscribe-box button{
-    width:60px;
-    font-size:18px;
   }
 
 }
