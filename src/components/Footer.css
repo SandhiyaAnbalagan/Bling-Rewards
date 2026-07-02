@@ -490,6 +490,37 @@
   color:#0284c7;
 
 }
+@media (max-width: 1024px) {
+
+  .footer-grid{
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+  }
+
+  .footer-top{
+    padding:50px 30px;
+    min-height:auto;
+  }
+
+  .footer-top h1{
+    font-size:36px;
+  }
+
+  .footer-top p{
+    font-size:18px;
+  }
+
+  .men-img{
+    width:220px;
+    left:10px;
+  }
+
+  .women-img{
+    width:220px;
+    right:10px;
+  }
+
+}
 
 /* =========================
    MOBILE
