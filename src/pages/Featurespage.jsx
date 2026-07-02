@@ -24,8 +24,7 @@ function Featurespage() {
                 with AI-powered automation tools.
               </p>
               <div className="hero-buttons">
-                <a href="#explore" className="primary-btn">Explore Features →</a>
-                <a href="#demo" className="secondary-btn">Book Demo →</a>
+                <a href="#explore" className="primary-btn">Explore Features </a>
               </div>
             </div>
             <div className="hero-right">
@@ -50,7 +49,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>AI Reward Engine</h3>
                   <p>Smart recommendations built to target exact user actions seamlessly without latency boundaries.</p>
-                  <span className="mesh-link-token">Explore Engine ↗</span>
+                  
                 </div>
               </div>
 
@@ -59,7 +58,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>QR Code Loyalty</h3>
                   <p>Scan, validate, and reward offline users in real-time instantly across distribution hubs.</p>
-                  <span className="mesh-link-token">View Analytics ↗</span>
+                  
                 </div>
               </div>
 
@@ -68,7 +67,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>Cashback & Spin</h3>
                   <p>Gamified engagement modules to boost active product retention drops and weekly engagement packs.</p>
-                  <span className="mesh-link-token">Setup Rules ↗</span>
+                 
                 </div>
               </div>
 
@@ -77,7 +76,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>Omnichannel Sync</h3>
                   <p>Sync web, mobile, and physical retail outlets inside one clear absolute ecosystem seamlessly.</p>
-                  <span className="mesh-link-token">Integrate Now ↗</span>
+                  
                 </div>
               </div>
 
@@ -86,7 +85,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>Dealer Management</h3>
                   <p>Incentivize distribution layers with automated milestone payouts and live ranking matrices.</p>
-                  <span className="mesh-link-token">Manage Layers ↗</span>
+                  
                 </div>
               </div>
 
@@ -95,7 +94,7 @@ function Featurespage() {
                 <div className="mesh-content-core">
                   <h3>Real-time Analytics</h3>
                   <p>Trace conversion matrices and program health dynamically over timelines instantly.</p>
-                  <span className="mesh-link-token">Launch Sheet ↗</span>
+                  
                 </div>
               </div>
             </div>

@@ -8,8 +8,13 @@
 }
 
 body {
-  font-family: 'Poppins', Inter, Arial, sans-serif;
-  background: linear-gradient(180deg, #ffffff 0%, #f6fcf9 20%, #edf7f3 60%, #ffffff 100%);
+  font-family:Inter, Arial, sans-serif;
+  background:   linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #F5F3FF 25%,
+    #E0F2FE 65%,
+    #ffffff 100%) !important;
   color: #011b17;
 }
 
@@ -22,7 +27,12 @@ body {
    ========================================================================== */
 .solution-hero {
   width: 100%;
-  background: linear-gradient(90deg, #001a16 0%, #00392f 55%, #005044 100%);
+  background:linear-gradient(
+      135deg,
+      #bb88ef,
+      #92b3e9,
+      #0284c7
+    );
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +56,7 @@ body {
   border-radius: 40px;
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  color: #66f5cf;
+  color: #000000;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -56,12 +66,12 @@ body {
   font-size: 52px;
   line-height: 1.15;
   font-weight: 900;
-  color: white;
+  color: rgb(0, 0, 0);
   margin: 25px 0;
 }
 
 .hero-content h1 span {
-  background: linear-gradient(135deg, #69f0c7, #9effe3);
+  background: linear-gradient(135deg, #000000, #000000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -69,7 +79,7 @@ body {
 .hero-content p {
   font-size: 17px;
   line-height: 1.75;
-  color: #cde8e2;
+  color: #000000;
   margin-bottom: 35px;
 }
 
@@ -85,7 +95,7 @@ body {
 }
 
 .hero-buttons button:first-child {
-  background: linear-gradient(135deg, #20d59f, #60f0cf);
+  background: linear-gradient(135deg, #000000, #000000);
   color: #00241d;
 }
 
@@ -131,7 +141,7 @@ body {
 .solution-card:hover {
   transform: translateY(-15px);
   background: rgba(255, 255, 255, 0.95);
-  border-color: #10b981;
+  border-color: #bb88ef;
   box-shadow: 0 30px 60px rgba(16, 185, 129, 0.15);
 }
 
@@ -141,7 +151,7 @@ body {
   top: 30px;
   font-size: 60px;
   font-weight: 900;
-  color: #10b981;
+  color: #92b3e9;
   opacity: 0.1;
   pointer-events: none;
 }
@@ -150,7 +160,7 @@ body {
   width: 65px;
   height: 65px;
   border-radius: 20px;
-  background: #011b17;
+  background: #bb88ef;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +169,7 @@ body {
 }
 
 .solution-card:hover .solutionicon {
-  background: #10b981;
+  background: #92b3e9;
   transform: scale(1.1);
 }
 
@@ -173,7 +183,7 @@ body {
 }
 
 .solution-card p {
-  color: #55726b;
+  color:#000000 ;
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 25px;
@@ -199,7 +209,7 @@ body {
 .benefits li::before {
   content: "✦";
   margin-right: 12px;
-  color: #10b981;
+  color: #92b3e9;
   font-size: 18px;
 }
 

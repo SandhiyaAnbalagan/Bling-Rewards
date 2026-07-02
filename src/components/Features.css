@@ -2,597 +2,338 @@
 
   padding:80px 40px;
 
+  font-family:Inter, Arial, sans-serif;
 
   background:
 
+    radial-gradient(
+      circle at top right,
+      rgba(14,165,233,0.18),
+      transparent 35%
+    ),
 
-  radial-gradient(
-    circle at top right,
-    rgba(15,118,110,0.18),
-    transparent 35%
-  ),
-
-
-  linear-gradient(
-    180deg,
-    #eef3f1 0%,
-    #e5ebe8 100%
-  );
-
-
+    linear-gradient(
+      180deg,
+     #97c7f2,
+      #dfc2ee,
+      #e0f2fe
+    );
 
   position:relative;
-
 
   overflow:hidden;
 
 }
 
-
-
-
-
 .features-container::before {
-
 
   content:"";
 
-
   position:absolute;
-
 
   width:380px;
 
-
   height:380px;
 
-
-  background:#34d399;
-
+  background:#38bdf8;
 
   filter:blur(150px);
 
-
   opacity:.18;
-
 
   top:-140px;
 
-
   right:-100px;
-
-
 
   pointer-events:none;
 
-
 }
-
-
-
-
 
 .features-container::after {
 
-
   content:"";
 
-
   position:absolute;
-
 
   width:300px;
 
-
   height:300px;
 
-
-  background:#d4af37;
-
+  background:#7dd3fc;
 
   filter:blur(160px);
 
-
   opacity:.12;
-
 
   bottom:-120px;
 
-
   left:-80px;
-
 
 }
 
-
-
-
+/* Heading */
 
 .features-container h2 {
 
-
   margin-bottom:40px;
-
 
   font-size:44px;
 
-
   font-weight:900;
-
-
 
   text-align:center;
 
+  color:#111827;
 
-
-  color:#073b36;
-
+  font-family:Inter, Arial, sans-serif;
 
 }
-
-
-
 
 .features-container h2 span {
 
-
   background:
 
-
-  linear-gradient(
-
-  135deg,
-
-  #0f766e,
-
-  #34d399,
-
-  #d4af37
-
-  );
-
-
+    linear-gradient(
+      135deg,
+      #0284c7,
+      #38bdf8,
+      #2ea2d8
+    );
 
   -webkit-background-clip:text;
 
-
   -webkit-text-fill-color:transparent;
 
-
 }
-
-
-
-
 
 .features-wrapper {
 
-
   position:relative;
-
 
   z-index:2;
 
-
 }
-
-
-
-
 
 .features-row {
 
-
   display:flex;
-
 
   gap:28px;
 
-
-
   overflow-x:auto;
-
-
 
   scroll-behavior:smooth;
 
-
-
   padding:20px 10px;
 
-
 }
-
-
-
-
 
 .features-row::-webkit-scrollbar {
 
-
   display:none;
 
-
 }
-
-
-
-
-
-
 
 /* Feature Glass Card */
 
-
 .feature-card {
-
 
   min-width:230px;
 
-
-
   background:
-
-
-  rgba(255,255,255,.72);
-
-
+    rgba(255,255,255,.72);
 
   backdrop-filter:blur(25px);
 
-
   -webkit-backdrop-filter:blur(25px);
 
-
-
   border:
-
-
-  1px solid rgba(255,255,255,.7);
-
-
+    1px solid rgba(255,255,255,.7);
 
   border-radius:28px;
 
-
-
   padding:28px;
-
-
 
   text-align:center;
 
-
-
   box-shadow:
-
-
-  0 20px 45px rgba(6,45,42,.12);
-
-
+    0 20px 45px rgba(2,132,199,.12);
 
   transition:.35s ease;
 
-
 }
-
-
-
-
 
 .feature-card:hover {
 
-
   transform:translateY(-12px);
 
-
-
   box-shadow:
-
-
-  0 30px 70px rgba(6,45,42,.22);
-
-
+    0 30px 70px rgba(2,132,199,.22);
 
 }
-
-
-
-
 
 .feature-card img {
 
-
   width:95px;
-
 
   height:95px;
 
-
-
   object-fit:contain;
-
-
 
   margin-bottom:18px;
 
-
 }
 
-
-
-
+/* Card Heading */
 
 .feature-card h4 {
 
-
   font-size:17px;
-
 
   font-weight:800;
 
-
-
   margin-bottom:12px;
 
+  color:#111827;
 
-
-  color:#073b36;
-
+  font-family:Inter, Arial, sans-serif;
 
 }
 
-
-
-
+/* Paragraph */
 
 .feature-card p {
 
-
   font-size:14px;
-
 
   line-height:1.6;
 
+  color:#111827;
 
-
-  color:#5c716d;
-
+  font-family:Inter, Arial, sans-serif;
 
 }
-
-
-
-
-
 
 /* Navigation Buttons */
 
-
 .arrow-btn {
-
 
   position:absolute;
 
-
-
   top:50%;
-
-
 
   transform:translateY(-50%);
 
-
-
   background:
 
-
-  linear-gradient(
-
-  135deg,
-
-  #0f766e,
-
-  #34d399
-
-  );
-
-
+    linear-gradient(
+      135deg,
+      #0284c7,
+      #40b5e6
+    );
 
   color:white;
 
-
-
   border:none;
-
-
 
   width:50px;
 
-
-
   height:50px;
-
-
 
   border-radius:50%;
 
-
-
   cursor:pointer;
-
-
 
   font-size:20px;
 
-
-
   z-index:10;
 
-
-
   box-shadow:
-
-
-  0 15px 35px rgba(15,118,110,.35);
-
-
+    0 15px 35px rgba(2,132,199,.35);
 
   transition:.3s ease;
 
-
 }
-
-
-
-
 
 .arrow-btn:hover {
 
-
   transform:
-
-  translateY(-50%)
-
-  scale(1.1);
-
-
+    translateY(-50%)
+    scale(1.1);
 
   background:
 
-
-  linear-gradient(
-
-  135deg,
-
-  #065f46,
-
-  #d4af37
-
-  );
-
-
+    linear-gradient(
+      135deg,
+      #0369a1,
+      #7dd3fc
+    );
 
 }
-
-
-
-
 
 .arrow-btn.left {
 
-
   left:-20px;
 
-
 }
-
-
-
 
 .arrow-btn.right {
 
-
   right:-20px;
-
 
 }
 
-
-
-
-
-
 /* Mobile */
-
 
 @media(max-width:768px){
 
-
   .features-container {
-
 
     padding:60px 20px;
 
-
   }
-
-
-
-
 
   .features-container h2 {
 
-
     font-size:32px;
 
-
   }
-
-
-
 
   .feature-card {
 
-
     min-width:190px;
-
 
     padding:20px;
 
-
   }
-
-
-
-
 
   .feature-card img {
 
-
     width:70px;
-
 
     height:70px;
 
-
   }
-
-
-
 
   .arrow-btn {
 
-
     width:42px;
-
 
     height:42px;
 
-
     font-size:16px;
 
-
   }
-
-
-
 
   .arrow-btn.left {
 
-
     left:-10px;
-
 
   }
 
-
-
   .arrow-btn.right {
 
-
     right:-10px;
-
 
   }
 

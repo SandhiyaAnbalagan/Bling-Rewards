@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Servicespage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -95,6 +95,7 @@ const servicesData = [
   }
 ];
 function Servicespage() {
+  const growthRef = useRef(null);
   return (
     <>
       <Navbar />
@@ -116,13 +117,16 @@ function Servicespage() {
             </p>
 
             <div className="brs-btn-group">
-              <button className="brs-primary-btn">
-                Explore Services →
-              </button>
-
-              <button className="brs-secondary-btn">
-                Book Demo
-              </button>
+              <button
+  className="primary-btn"
+  onClick={() =>
+    growthRef.current?.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+>
+  Explore Services →
+</button>
             </div>
           </div>
 
@@ -135,7 +139,10 @@ function Servicespage() {
         </section>
 
         {/* SERVICES */}
-     <section className="brs-services-section">
+     <section
+  className="brs-services-section"
+  ref={growthRef}
+>
   <h2 className="brs-section-title">
     Solutions Designed <span>For Growth</span>
   </h2>
@@ -149,7 +156,7 @@ function Servicespage() {
       width: '0', height: '0', 
       borderLeft: '20px solid transparent', 
       borderRight: '20px solid transparent', 
-      borderBottom: '30px solid #22c55e',
+      borderBottom: '30px solid #92b3e9',
       marginBottom: '-20px'
     }}></div>
     {/* 7th Item - Top Card */}

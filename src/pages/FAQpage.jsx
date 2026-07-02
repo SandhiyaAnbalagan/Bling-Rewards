@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./FAQpage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -48,7 +48,14 @@ const faqData = [
 
 function FAQpage() {
   const [active, setActive] = useState(0);
+const faqRef = useRef(null);
 
+const scrollToQuestions = () => {
+  faqRef.current?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+};
   const toggleFaq = (index) => {
     setActive(active === index ? null : index);
   };
@@ -72,7 +79,9 @@ function FAQpage() {
               Find quick answers below.
             </p>
 
-            <button>Book a Demo</button>
+            <button onClick={scrollToQuestions}>
+  Explore Questions
+</button>
           </div>
 
           <div className="faq-banner-right">
@@ -84,7 +93,10 @@ function FAQpage() {
         </section>
 
         {/* FAQ SECTION */}
-        <section className="faq-list-section">
+       <section
+  className="faq-list-section"
+  ref={faqRef}
+>
           {faqData.map((item, index) => (
             <div className="faq-card-box" key={index}>
               <div

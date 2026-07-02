@@ -24,7 +24,12 @@ function Hero() {
           helps brands acquire, engage and retain customers.
         </p>
 
-        <button className="hero-btn">Get Started</button>
+        <button
+  className="hero-btn"
+  onClick={() => window.location.href = "#about"}
+>
+  Get Started
+</button>
 
         <div className="hero-features">
           <div className="feature">

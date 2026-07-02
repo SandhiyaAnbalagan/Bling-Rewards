@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./CaseStudypage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 const CaseStudypage = () => {
+    const featuredRef = useRef(null);
+
+  const scrollToFeatured = () => {
+    featuredRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -26,8 +35,10 @@ const CaseStudypage = () => {
             </p>
 
             <div className="hero-buttons">
-              <button>Explore Case Studies</button>
-              <button className="outline-btn">Book Demo</button>
+              <button onClick={scrollToFeatured}>
+  Explore Case Studies
+</button>
+        
             </div>
           </div>
 
@@ -51,7 +62,10 @@ const CaseStudypage = () => {
 
         {/* FEATURED CASE STUDIES */}
 
-        <section className="featured-section">
+        <section
+  className="featured-section"
+  ref={featuredRef}
+>
           <h2>
   Featured <span>Case Studies</span>
 </h2>

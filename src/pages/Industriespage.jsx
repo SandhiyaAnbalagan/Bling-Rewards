@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Industriespage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-
+import DemoForm from "../components/DemoForm";
 const industries = [
   {
     id: "01",
@@ -175,6 +175,15 @@ const industries = [
 ];
 
 function Industriespage() {
+  const industriesRef = useRef(null);
+const [showDemo, setShowDemo] = useState(false);
+
+const scrollToIndustries = () => {
+  industriesRef.current?.scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+};
   return (
     <>
       <Navbar />
@@ -196,11 +205,22 @@ function Industriespage() {
               loyalty, rewards, engagement and retention solutions.
             </p>
 
-            <div className="hero-buttons">
-              <button className="primary-btn">Explore Industries</button>
-              <button className="secondary-btn">Book Demo</button>
-            </div>
-          </div>
+        <div className="hero-buttons">
+  <button
+    className="primary-btn"
+    onClick={scrollToIndustries}
+  >
+    Explore Industries
+  </button>
+
+<button
+  className="secondary-btn"
+  onClick={() => setShowDemo(true)}
+>
+  Book Demo
+</button>
+</div>
+</div>
 
           <div className="hero-right">
             <img
@@ -211,7 +231,10 @@ function Industriespage() {
         </section>
 
         {/* MODERN ALTERNATING MAGAZINE GRID */}
-        <section className="industries-grid-section">
+       <section
+  className="industries-grid-section"
+  ref={industriesRef}
+>
           <div className="section-header">
             <h2>
               Explore Industries <span>We Empower</span>
@@ -302,7 +325,20 @@ function Industriespage() {
             </div>
           </div>
         </section>
-        
+        {showDemo && (
+  <div className="demo-popup-overlay">
+    <div className="demo-popup-container">
+      <button
+        className="close-demo"
+        onClick={() => setShowDemo(false)}
+      >
+        ×
+      </button>
+
+      <DemoForm />
+    </div>
+  </div>
+)}
         <Footer/>
       </div>
     </>

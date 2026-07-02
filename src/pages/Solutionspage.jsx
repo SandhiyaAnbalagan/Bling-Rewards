@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Solutionspage.css";
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-; 
+import { useNavigate } from "react-router-dom";
 const solutions = [
   {
     title:"QR Based Brand Protection",
@@ -48,7 +48,8 @@ const solutions = [
 
 
 function Solutionspage(){
-
+const solutionsRef = useRef(null);
+  const navigate = useNavigate();
 return(
      <div>
     <Navbar />
@@ -81,11 +82,22 @@ return(
       </p>
 
       <div className="hero-buttons">
-        <button>Explore Solutions</button>
+        <button
+  onClick={() =>
+    solutionsRef.current?.scrollIntoView({
+      behavior: "smooth"
+    })
+  }
+>
+  Explore Solutions
+</button>
 
-        <button className="outline">
-          View Case Studies
-        </button>
+          <button
+    className="outline"
+    onClick={() => navigate("/casestudy")}
+  >
+    View Case Studies
+  </button>
       </div>
 
     </div>
@@ -103,7 +115,10 @@ return(
 
 {/* Cards */}
 
-<section className="solution-grid">
+<section
+  className="solution-grid"
+  ref={solutionsRef}
+>
 
 {
 solutions.map((item,index)=>(
